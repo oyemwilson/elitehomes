@@ -53,7 +53,7 @@ const AboutUs = () => {
         <div>
           <h2 className="text-2xl font-semibold text-[#1c4c50] mb-4">Where We Serve</h2>
           <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-            We proudly serve high-profile families, professionals, and private households across the Abuuja.
+            We proudly serve high-profile families, professionals, and private households across Abuja.
             Whether you're in need of full-time help, live-in staff, or part-time support, we tailor each placement with
             discretion, attention to detail, and care.
           </p>

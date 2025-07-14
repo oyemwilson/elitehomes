@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function ContactForm() {
   const location = useLocation();
@@ -190,34 +191,25 @@ function ContactForm() {
         )}
 
 <div className="space-y-2">
-  <label className="flex items-start space-x-2">
-    <input
-      type="checkbox"
-      name="terms"
-      required
-      className="h-4 w-4 mt-1 text-[#1c4c50] border-gray-300 rounded focus:ring-[#1c4c50]"
-    />
-    <span className="text-sm text-gray-700">
-      I have read and agree to the{' '}
-      <a
-        href="/terms-and-conditions"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[#1c4c50] hover:underline"
-      >
-        Terms and Conditions
-      </a>{' '}
-      and{' '}
-      <a
-        href="/privacy-policy"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[#1c4c50] hover:underline"
-      >
-        Privacy Policy
-      </a>.
-    </span>
-  </label>
+<label className="flex items-start space-x-2">
+  <input
+    type="checkbox"
+    name="terms"
+    required
+    className="h-4 w-4 mt-1 text-[#1c4c50] border-gray-300 rounded focus:ring-[#1c4c50]"
+  />
+  <span className="text-sm text-gray-700">
+    I have read and agree to the{' '}
+    <Link
+      to="/terms-and-condition"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#1c4c50] hover:underline"
+    >
+      Terms and Conditions and Privacy Policy
+    </Link>.
+  </span>
+</label>
 </div>
 
 
