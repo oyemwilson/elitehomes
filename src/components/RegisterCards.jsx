@@ -38,12 +38,6 @@ export default function RegisterCards() {
           key={index}
           className="relative flex-1 h-96 overflow-hidden shadow-md group"
         >
-          {!imageLoaded[index] && (
-            <div className="absolute inset-0 flex items-center justify-center bg-gray-100 z-10">
-              <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-[#1c4c50]"></div>
-            </div>
-          )}
-
           <img
             src={card.image}
             alt={card.title}
