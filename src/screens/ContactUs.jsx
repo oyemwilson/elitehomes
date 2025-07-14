@@ -174,9 +174,7 @@ function ContactForm() {
                 <option value="Live-out Nanny">Live-out Nanny</option>
                 <option value="Housekeeper">Housekeeper</option>
                 <option value="Governess">Governess</option>
-                <option value="Cook">Cook</option>
                 <option value="Maternity Nurse">Maternity Nurse</option>
-                <option value="Driver">Driver</option>
                 <option value="Other">Other</option>
               </select>
             </div>
