@@ -38,10 +38,10 @@ export default function Navbar() {
             <div className="hidden md:block h-10"></div>
             <div className="flex items-center space-x-2 text-base">
               <Phone className="w-4 h-4 text-[#1c4c50]" />
-              <span>Call us on +44 (0) 20 4577 1117</span>
+              <span>Call us on +234 (0) 8133634396</span>
             </div>
             <p className="hidden md:block text-xs text-gray-500 mt-1">
-              Nannies, Governesses & Maternity Nurses | London & Overseas | High Profile Nanny & Governess Agency
+              Nannies, Home keepers & Maternity Nurses | Nigeria | High Profile Nanny & Governess Agency
             </p>
           </div>
         </div>

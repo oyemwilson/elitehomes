@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import React, { useState } from "react";
+
 import ImageSlider from "../components/ImageSlider";
 import RegisterCards from "../components/RegisterCards";
 
@@ -7,7 +7,7 @@ import RegisterCards from "../components/RegisterCards";
 
 
 const LandingPage = () => {
-    const [role, setRole] = useState("Candidate");
+    const [, setRole] = useState("Candidate");
   return (
     <div>
       <div  data-aos="fade-up">

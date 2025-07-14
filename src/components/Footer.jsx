@@ -7,26 +7,26 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 
         {/* Quick Links */}
-<div>
-  <h3 className="text-lg font-semibold mb-4">Explore</h3>
-  <ul className="space-y-2">
-    <li>
-      <Link to="/contact" className="hover:underline">
-        Contact Us
-      </Link>
-    </li>
-    <li>
-      <Link to="/about" className="hover:underline">
-        About Us
-      </Link>
-    </li>
-    <li>
-      <Link to="/services" className="hover:underline">
-        Services
-      </Link>
-    </li>
-  </ul>
-</div>
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Explore</h3>
+          <ul className="space-y-2">
+            <li>
+              <Link to="/contact" className="hover:underline">
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:underline">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/services" className="hover:underline">
+                Services
+              </Link>
+            </li>
+          </ul>
+        </div>
 
 
         {/* Contact Info */}
@@ -44,7 +44,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
           <div className="flex space-x-4">
             <a
-              href="#"
+              href="/#"
               aria-label="Facebook"
               aria-disabled="true"
               className="pointer-events-none opacity-50"
@@ -53,7 +53,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="#"
+              href="/#"
               aria-label="Twitter"
               aria-disabled="true"
               className="pointer-events-none opacity-50"
@@ -62,7 +62,9 @@ export default function Footer() {
             </a>
 
             <a
-              href="#"
+              href="https://www.instagram.com/elitehomecarepartners?igsh=a2Y3MzdyaTI2N3J1"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
               className="hover:text-[#66a5ad]"
             >
