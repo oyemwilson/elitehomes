@@ -50,18 +50,16 @@ function ContactForm() {
         <button
           type="button"
           onClick={() => setRole('Candidate')}
-          className={`px-4 py-2 rounded-full text-sm font-medium ${
-            role === 'Candidate' ? 'bg-[#1c4c50] text-white' : 'bg-gray-100 text-gray-700'
-          }`}
+          className={`px-4 py-2 rounded-full text-sm font-medium ${role === 'Candidate' ? 'bg-[#1c4c50] text-white' : 'bg-gray-100 text-gray-700'
+            }`}
         >
           For Staff Candidates
         </button>
         <button
           type="button"
           onClick={() => setRole('Client')}
-          className={`px-4 py-2 rounded-full text-sm font-medium ${
-            role === 'Client' ? 'bg-[#1c4c50] text-white' : 'bg-gray-100 text-gray-700'
-          }`}
+          className={`px-4 py-2 rounded-full text-sm font-medium ${role === 'Client' ? 'bg-[#1c4c50] text-white' : 'bg-gray-100 text-gray-700'
+            }`}
         >
           For Clients / Parents
         </button>
@@ -190,27 +188,26 @@ function ContactForm() {
           </>
         )}
 
-<div className="space-y-2">
-<label className="flex items-start space-x-2">
-  <input
-    type="checkbox"
-    name="terms"
-    required
-    className="h-4 w-4 mt-1 text-[#1c4c50] border-gray-300 rounded focus:ring-[#1c4c50]"
-  />
-  <span className="text-sm text-gray-700">
-    I have read and agree to the{' '}
-    <Link
-      to="/terms-and-condition"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-[#1c4c50] hover:underline"
-    >
-      Terms and Conditions and Privacy Policy
-    </Link>.
-  </span>
-</label>
-</div>
+        <div className="space-y-2">
+          <label className="flex items-start space-x-2">
+            <input
+              type="checkbox"
+              name="terms"
+              required
+              className="h-4 w-4 mt-1 text-[#1c4c50] border-gray-300 rounded focus:ring-[#1c4c50]"
+            />
+            <span className="text-sm text-gray-700">
+              I have read and agree to the{' '}
+              <Link
+                to="/terms-and-condition"
+                rel="noopener noreferrer"
+                className="text-[#1c4c50] hover:underline"
+              >
+                Terms and Conditions and Privacy Policy
+              </Link>.
+            </span>
+          </label>
+        </div>
 
 
         <button
