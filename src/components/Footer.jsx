@@ -25,6 +25,11 @@ export default function Footer() {
                 Services
               </Link>
             </li>
+            <li>
+              <Link to="/terms-and-condition" className="hover:underline">
+                Terms and Policy
+              </Link>
+            </li>
           </ul>
         </div>
 

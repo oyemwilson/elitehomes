@@ -16,6 +16,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import TermsAndPrivacy from './screens/TandC';
 
 
 
@@ -40,6 +41,7 @@ useEffect(() => {
           <Route path="/services" element={<Services />} />
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/terms-and-condition" element={<TermsAndPrivacy />} />
         </Routes>
         <Footer />
       </div>
