@@ -200,7 +200,6 @@ function ContactForm() {
               I have read and agree to the{' '}
               <Link
                 to="/terms-and-condition"
-                rel="noopener noreferrer"
                 className="text-[#1c4c50] hover:underline"
               >
                 Terms and Conditions and Privacy Policy
