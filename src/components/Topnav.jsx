@@ -85,7 +85,6 @@ export default function Navbar() {
     <Link to="/about" onClick={closeMenu} className="text-white hover:text-gray-300">About Us</Link>
     <Link to="/services" onClick={closeMenu} className="text-white hover:text-gray-300">Services</Link>
     <Link to="/why-choose-us" onClick={closeMenu} className="text-white hover:text-gray-300">Why Choose Us</Link>
-    <Link to="/contact" onClick={closeMenu} className="text-white hover:text-gray-300">Contact Us</Link>
   </div>
 )}
 
