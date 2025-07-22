@@ -1,7 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react';
+import { JsonLd } from 'react-schemaorg';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
@@ -32,6 +33,14 @@ useEffect(() => {
 
   return (
     <Router>
+      <JsonLd
+        item={{
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'Elite Homes',
+          url: 'https://www.elitehomecareng.com/',
+        }}
+      />
       <ScrollToTop />
       <TopNav />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
