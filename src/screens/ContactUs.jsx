@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function ContactForm() {
   const location = useLocation();
   const [localRole, setLocalRole] = useState(location.state?.role || 'Candidate');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  
   const role = localRole;
   const setRole = setLocalRole;
 
@@ -38,6 +40,12 @@ function ContactForm() {
 
   return (
     <div className="max-w-3xl mx-auto py-16 px-4">
+      <Helmet>
+        <title>Contact Us - EliteHomes</title>
+        <meta name="description" content="Contact EliteHomes for inquiries about staff candidates, nannies, housekeepers, or other home staffing needs. Reach out to us for professional and reliable home care solutions." />
+        <meta name="keywords" content="contact EliteHomes, home staffing, nannies, housekeepers, governess, maternity nurse, domestic staff, home care solutions, contact form" />
+      </Helmet>
+
       {showSuccess && (
         <div className="text-center bg-green-100 text-green-800 p-4 rounded mb-6 border border-green-300">
           <h2 className="text-xl font-semibold mb-1">Thank you!</h2>
@@ -76,12 +84,48 @@ function ContactForm() {
         {role === 'Candidate' ? (
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input name="name" type="text" placeholder="First Name" required className="input" />
-              <input name="surname" type="text" placeholder="Surname" required className="input" />
-              <input name="stateOfOrigin" type="text" placeholder="State of Origin" required className="input" />
-              <input name="stateOfResidence" type="text" placeholder="State of Residence" required className="input" />
-              <input name="email" type="email" placeholder="Email Address" required className="input" />
-              <input name="phone" type="tel" placeholder="Phone Number" required className="input" />
+              <input 
+                name="name" 
+                type="text" 
+                placeholder="First Name" 
+                required 
+                className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#1c4c50]" 
+              />
+              <input 
+                name="surname" 
+                type="text" 
+                placeholder="Surname" 
+                required 
+                className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#1c4c50]" 
+              />
+              <input 
+                name="stateOfOrigin" 
+                type="text" 
+                placeholder="State of Origin" 
+                required 
+                className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#1c4c50]" 
+              />
+              <input 
+                name="stateOfResidence" 
+                type="text" 
+                placeholder="State of Residence" 
+                required 
+                className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#1c4c50]" 
+              />
+              <input 
+                name="email" 
+                type="email" 
+                placeholder="Email Address" 
+                required 
+                className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#1c4c50]" 
+              />
+              <input 
+                name="phone" 
+                type="tel" 
+                placeholder="Phone Number" 
+                required 
+                className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#1c4c50]" 
+              />
               <div>
                 <label htmlFor="dob" className="block mb-1 font-medium text-sm text-gray-700">
                   Date of Birth
@@ -95,7 +139,13 @@ function ContactForm() {
                   placeholder="YYYY-MM-DD"
                 />
               </div>
-              <input name="address" type="text" placeholder="Residential Address" required className="input" />
+              <input 
+                name="address" 
+                type="text" 
+                placeholder="Residential Address" 
+                required 
+                className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#1c4c50]" 
+              />
             </div>
 
             <div>
@@ -207,7 +257,6 @@ function ContactForm() {
             </span>
           </label>
         </div>
-
 
         <button
           type="submit"

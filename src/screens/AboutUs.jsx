@@ -1,8 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const AboutUs = () => {
   return (
-    <div className="bg-white text-gray-800 mt-10">
+    <>
+      <Helmet>
+        <title>About Us | Elite Homecare Partners</title>
+        <meta name="description" content="Learn more about Elite Homecare Partners, a distinguished domestic staffing agency providing trusted and experienced care professionals for families." />
+      </Helmet>
+      <div className="bg-white text-gray-800 mt-10">
       {/* Hero Section */}
       <section className="bg-[#f0f6f6] py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
@@ -70,6 +76,7 @@ const AboutUs = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

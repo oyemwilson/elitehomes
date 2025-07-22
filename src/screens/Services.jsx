@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import {
   Baby,
   UserCheck,
@@ -10,7 +11,12 @@ import {
 
 const Services = () => {
   return (
-    <div className="bg-white text-gray-800 mt-10">
+    <>
+      <Helmet>
+        <title>Our Services | Elite Homecare Partners</title>
+        <meta name="description" content="Explore the comprehensive homecare services offered by Elite Homecare Partners, including nannies, governesses, maternity nurses, elderly caregivers, housekeepers, and home managers." />
+      </Helmet>
+      <div className="bg-white text-gray-800 mt-10">
       {/* Hero Section */}
       <section className="bg-[#f0f6f6] py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
@@ -80,6 +86,7 @@ const Services = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
